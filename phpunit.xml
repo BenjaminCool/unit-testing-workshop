@@ -1,0 +1,16 @@
+<phpunit 
+	bootstrap="classes/autoload.php"
+	colors="true"
+	convertErrorsToExceptions="true"
+	ConvertNoticesToExceptions="true"
+	ConvertWarningsToExceptions="true"
+	processIsolation="false"
+	stopOnFailure="false"
+	syntaxCheck="true"
+	>
+	<testsuites>
+		<testsuite name="Unit Testing Talk">
+			<directory>tests</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>
