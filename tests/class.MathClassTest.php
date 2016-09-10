@@ -31,7 +31,7 @@ class TestMathClass extends MockeryTestCase {
 	public function testCanSubtract($math){
 		$expected = 3;
 		$answer = $math->subtract(48,45);
-		$this->assertEquals($expected,$answer,'Answer does not match the expected');
+		$this->assertEquals($expected,$answer,'Subtraction did not work');
 	}
 	
 	/**

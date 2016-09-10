@@ -41,7 +41,7 @@ class CalculateClass {
 	 * @return array
 	 */
 	public function parse_problem($problem){
-		$regex = '/(?P<first>[0-9])+\s*(?P<operator>[+-\/\*])\s*(?P<second>[0-9]+)/';
+		$regex = '/(?P<first>[0-9]+)\s*(?P<operator>[+-\/\*])\s*(?P<second>[0-9]+)/';
 		if(preg_match($regex,$problem,$matches) !== false){
 			if(isset($matches['first']) && isset($matches['operator']) && isset($matches['second'])){
 				return $matches;
